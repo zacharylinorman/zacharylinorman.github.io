@@ -65,6 +65,10 @@ body{
 	text-align:center;
 }
 
+#aboutText{
+	width:80%;
+}
+
 #skills{
 	position:relative;
 	width:100%;
@@ -101,9 +105,9 @@ body{
 }
 
 .text h1{
-
+	display:inline;
 	color: #ffffff;
-	font-size: 2.5vw;
+	font-size: 2.35vw;
 }
 
 .text h2{
