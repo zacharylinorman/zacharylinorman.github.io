@@ -1,14 +1,30 @@
+::-webkit-scrollbar { 
+    display:none !important
+}
 body{
-	/*background-image: url("images/beach-sunset-thailand.jpg");*/
-	background: url("images/Skype_Picture_2019_10_28T00_51_36_222Z.jpeg") no-repeat center center scroll;
-	background-color: #cccccc;
-	background-position: center;
-	background-size: cover;
 	position:relative;
 	margin: 0;
+	overflow: -moz-scrollbars-none;
+	/*overflow-y: hidden;*/
+}
+
+#scrollBar{
+	display:none;
+	position:fixed;
+	opacity:0;
+	height:7.5%;
+	width:100%;
+	background-color: #ababab;
+	z-index:1;
+	
+	text-align:center;
 }
 
 #home{
+	/*background: url("images/beach-sunset-thailand.jpg") no-repeat center center scroll;*/
+	background: url("images/Skype_Picture_2019_10_28T00_51_36_222Z.jpeg") no-repeat center center scroll;
+	background-color: #cccccc;
+	background-size: cover;
 	position:relative; 
 	height:100%; 
 	padding:0; 
@@ -44,8 +60,34 @@ body{
 #about{
 	position:relative;
 	width:100%;
-	height: 100%;
-	background-color: #ffffff;
+	height: 92.5%;
+	background-color: #eeeeee;
+	text-align:center;
+}
+
+#skills{
+	position:relative;
+	width:100%;
+	height: 92.5%;
+	background-color: #dddddd;
+	text-align:center;
+}
+
+#projects{
+	position:relative;
+	width:100%;
+	height: 92.5%;
+	background-color: #cccccc;
+	text-align:center;
+}
+
+.info{
+	padding:5%;
+	position:relative;
+	top: 42.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
 }
 
 .buttonCircular{
@@ -55,10 +97,21 @@ body{
 
 .text{
 	font-family: "Spectral";
+	font-size: 1.45vw;
 }
 
 .text h1{
+
 	color: #ffffff;
-	font-weight: bold;
 	font-size: 2.5vw;
+}
+
+.text h2{
+	display:inline;
+	font-size: 2.0vw;
+}
+
+.text h3{
+	display:inline;
+	font-size: 1.5vw;
 }

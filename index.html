@@ -2,37 +2,102 @@
 <head>
 	<link rel="stylesheet" href="assets/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
-	
-	<script src="assets/javascript/main.js"></script>
-	<script src="assets/javascript/jquery-3.4.1.js"></script>
-	<script src="assets/javascript/jquery.scrollTo.js"></script>
 	<title>Zachary Li Norman</title>
 </head>
-<body>
+<body>	
+	<div id ="scrollBar">
+		<button onclick="srl('home');">HOME</button>
+		<button onclick="srl('about');">ABOUT</button>
+		<button onclick="srl('skills');">SKILLS</button>
+		<button onclick="srl('projects');">PROJECTS</button>
+	</div>
 	<div id ="home">
 		<div id="main">
 			<div class="text" id="mainBubble">
-				<h1>ZACHARY NORMAN</h1>
+				<br>
+				<h1>ZACHARY LI NORMAN</h1>
 				<h3>-Software Developer-</h3>
-				<button onclick="$(window).scrollTo($('#about'), 800, {offset: -75});">ABOUT</button>
-				
+				<br>
+				<button onclick="srl('about');">ABOUT</button>
+				<button onclick="srl('skills');">SKILLS</button>
+				<button onclick="srl('projects');">PROJECTS</button>				
 				<br>
 				<img class="buttonCircular" 
 					 onclick="openInNewTab('https://www.github.com/zacharylinorman')"
 					 src="assets/images/GitHub-Mark-120px-plus.png">
 				<img class="buttonCircular" 
-					 onclick="openInNewTab('mailto:zacharylinorman@gmail.com')" 
+					 onclick="window.open('mailto:zacharylinorman@gmail.com')" 
 					 src="assets/images/email.png">
+				<img style="width:128px; height:108.85px; cursor:pointer;"
+					 onclick="openInNewTab('https://www.linkedin.com/in/zacharylinorman/')" 
+					 src="assets/images/LI-In-Bug.png" >
+					 
 			</div>
 		</div>
 	</div>
 	<div id="about">
-		<div class="text">
-			About
+		<div id="aboutText" class="text info">
+			<h2>About</h2>
+			
+			<br><hr style="width:25%"><br>
+			
+			I am a highly-motivated autodidact who's feet were dipped into the world of software development over a decade ago. 
+			My never-ending curiousity drove me from first developing <a href="https://www.minecraft.net/en-us/" target="_blank">Minecraft</a> mods to eventually publishing my own game.
+			I thoroughly enjoy programming and writing music, and am constantly on the hunt to learn and develop more skills.
 			<br>
-			Zachary Li Norman is a highly-motivated individual who dipped his feet into the world of programming over a decade ago. His never-ending curiousity drove him from first developing Minecraft mods to eventually publishing his own game.
 		</div>
 	</div>
+
+
+	<div id="skills">
+		<div id="skillsText" class="text info">
+			<h2>Skills</h2>
+			
+			<br><hr style="width:25%"><br>
+			
+			<h3>Languages</h3><br>
+			Java, C++, Javascript, HTML, CSS, C#
+			<br><br>
+			
+			<h3>Libraries/Frameworks</h3><br>
+			LibGDX, jQuery, LWJGL, Qt, Unity
+			<br><br>
+			
+			<h3>IDEs</h3><br>
+			Eclipse, Android Studio, Qt Creator, Notepad++, Visual Studio
+			<br><br>
+			
+			<h3>Software</h3><br>
+			Paint.net, Unity, MuseScore, FL Studio
+			<br>
+		</div>
+	</div>
+	
+	<div id="projects">
+		<div id="projectsText" class="text info">
+			<h2>Projects</h2>
+			<br><hr style="width:25%">
+			<h3 onclick="openInNewTab('https://play.google.com/store/apps/details?id=com.charizard832.game')"
+				style="cursor:pointer;text-decoration: underline;">Peh</h3><br>
+
+			<img style="vertical-align:middle;"src="assets/images/peh.png">
+			<div style="display:inline-block; text-align:left; vertical-align:middle;">
+			&#8226; A simple mobile arcade-style game with original art and music<br>
+			&#8226; Developed using Java with the <a href="https://libgdx.badlogicgames.com/" target="_blank">LibGDX</a> framework<br>
+			&#8226; <a href="https://www.getpaint.net/" target="_blank">Paint.net</a> and <a href="https://musescore.org/en" target="_blank">MuseScore</a> were used for the art and music
+			</div>
+		</div>
+	</div>
+
+	
+	
+	
+
+	<script src="assets/javascript/jquery-3.4.1.js"></script>
+	<script src="assets/javascript/jquery.scrollTo.js"></script>
+	<script src="assets/javascript/main.js"></script>
+	
+	
 	
 </body>
 </html>
