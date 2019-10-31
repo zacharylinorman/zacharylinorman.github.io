@@ -22,7 +22,7 @@ body{
 
 #home{
 	/*background: url("images/beach-sunset-thailand.jpg") no-repeat center center scroll;*/
-	background: url("images/Skype_Picture_2019_10_28T00_51_36_222Z.jpeg") no-repeat center center scroll;
+	background: url("images/Skype_Picture_2019_10_28T00_51_36_222Z.jpeg") no-repeat center center scroll; /*Picture Credit: Erica Yu*/
 	background-color: #cccccc;
 	background-size: cover;
 	position:relative; 
@@ -36,8 +36,8 @@ body{
 #main{
 	position:relative;
 	
-	width:35%;
-	padding-top:35%;
+	width:37.5%;
+	padding-top:37.5%;
 	
 	top: 50%;
 	left: 50%;
@@ -49,6 +49,7 @@ body{
 	background-color: rgba(204, 204, 204, 0.3);
 }
 
+
 #mainBubble{
 	position:absolute;
 	top:10%;
@@ -56,6 +57,7 @@ body{
 	bottom:0;
 	right:0;
 }
+
 
 #about{
 	position:relative;
@@ -88,9 +90,9 @@ body{
 .info{
 	padding:5%;
 	position:relative;
+	margin: 0 auto;
 	top: 42.5%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateY(-50%);
 	
 }
 
