@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $(this).scrollTop(0);
 
     $(window).scroll(function(){
 		$("#scrollBar").css({opacity:$(window).scrollTop()/(window.innerHeight*0.925)});
@@ -8,7 +9,6 @@ $(document).ready(function(){
 			$("#scrollBar").css({display:"block"});
 		}
     });
-
 });
 function srl(div){
 	$(window).scrollTo($('#'+div), 800, {offset: -window.innerHeight*0.0749});

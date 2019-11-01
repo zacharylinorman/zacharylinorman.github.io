@@ -2,34 +2,39 @@
 <head>
 	<link rel="stylesheet" href="assets/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+
 	<title>Zachary Li Norman</title>
 </head>
 <body>	
+
+	<div id="bg"></div>
 	<div id ="scrollBar">
-		<button onclick="srl('home');">HOME</button>
-		<button onclick="srl('about');">ABOUT</button>
-		<button onclick="srl('skills');">SKILLS</button>
-		<button onclick="srl('projects');">PROJECTS</button>
+		<div class="text">
+			<div class="btn" onclick="srl('home');">HOME</div>
+			<div class="btn" onclick="srl('about');">ABOUT</div>
+			<div class="btn" onclick="srl('skills');">SKILLS</div>
+			<div class="btn" onclick="srl('projects');">PROJECTS</div>
+		</div>
 	</div>
 	<div id ="home">
-		<div id="main">
-			<div class="text" id="mainBubble">
+		<div id="mainBubble">
+			<div id="mainText" class="text">
 				<br><br><br>
 				<h1>ZACHARY LI NORMAN</h1>
 				<br>
 				<h3>-Software Developer-</h3>
 				<br><br>
-				<button onclick="srl('about');">ABOUT</button>
-				<button onclick="srl('skills');">SKILLS</button>
-				<button onclick="srl('projects');">PROJECTS</button>				
-				<br>
-				<img class="buttonCircular" 
+				<div class="btn" style="border: 1px black solid; box-shadow: -1px 2px 5px 0 #000000;" onclick="srl('about');">ABOUT</div>
+				<div class="btn" style="border: 1px black solid; box-shadow: -1px 2px 5px 0 #000000;" onclick="srl('skills');">SKILLS</div>
+				<div class="btn" style="border: 1px black solid; box-shadow: -1px 2px 5px 0 #000000;" onclick="srl('projects');">PROJECTS</div>				
+				<br><br>
+				<img class="buttonContact" 
 					 onclick="openInNewTab('https://www.github.com/zacharylinorman')"
 					 src="assets/images/GitHub-Mark-120px-plus.png">
-				<img class="buttonCircular" 
+				<img class="buttonContact" 
 					 onclick="window.open('mailto:zacharylinorman@gmail.com')" 
 					 src="assets/images/email.png">
-				<img style="width:128px; height:108.85px; cursor:pointer;"
+				<img class="buttonContact" style="border-radius:0; width:10%; height:9.5%;"
 					 onclick="openInNewTab('https://www.linkedin.com/in/zacharylinorman/')" 
 					 src="assets/images/LI-In-Bug.png" >
 					 
@@ -38,54 +43,60 @@
 	</div>
 	
 	<div id="about">
-		<div id="aboutText" class="text info">
-			<h2>About</h2>
-			
-			<br><hr style="width:25%"><br>
-			
-			I am a highly-motivated autodidact who's feet were dipped into the world of software development over a decade ago. 
-			My never-ending curiousity drove me from first developing <a href="https://www.minecraft.net/en-us/" target="_blank">Minecraft</a> mods to eventually publishing my own game.
-			I thoroughly enjoy programming and writing music, and am constantly on the hunt to learn and develop more skills.
-			<br>
-		</div>
+		<div id="aboutBubble">
+			<div id="aboutText" class="text">
+				<h2>About</h2>
+				
+				<br><hr style="width:25%"><br>
+				
+				I am a highly-motivated autodidact who's feet were dipped into the world of software development over a decade ago. 
+				My never-ending curiousity drove me from first developing <a href="https://www.minecraft.net/en-us/" target="_blank">Minecraft</a> mods to eventually publishing my own game.
+				I thoroughly enjoy programming and writing music, and am constantly on the hunt to learn and develop more skills.
+				<br>
+			</div>
+		</div>	
 	</div>
 
 	<div id="skills">
-		<div id="skillsText" class="text info">
-			<h2>Skills</h2>
-			
-			<br><hr style="width:25%"><br>
-			
-			<h3>Languages</h3><br>
-			Java, C++, Javascript, HTML, CSS, C#
-			<br><br>
-			
-			<h3>Libraries/Frameworks</h3><br>
-			LibGDX, jQuery, LWJGL, Qt, Unity
-			<br><br>
-			
-			<h3>IDEs</h3><br>
-			Eclipse, Android Studio, Qt Creator, Notepad++, Visual Studio
-			<br><br>
-			
-			<h3>Software</h3><br>
-			Paint.net, Unity, MuseScore, FL Studio
-			<br>
+		<div id="skillsBubble">
+			<div id="skillsText" class="text">
+				<h2>Skills</h2>
+				
+				<br><hr style="width:18%"><br>
+				
+				<h3>Languages</h3><br>
+				Java, C++, Javascript, HTML, CSS, C#
+				<br><br>
+				
+				<h3>Libraries/Frameworks</h3><br>
+				LibGDX, jQuery, LWJGL, Qt, Unity
+				<br><br>
+				
+				<h3>IDEs</h3><br>
+				Eclipse, Android Studio, Qt Creator, Notepad++, Visual Studio
+				<br><br>
+				
+				<h3>Software</h3><br>
+				Paint.net, Unity, MuseScore, FL Studio
+				<br>
+			</div>
 		</div>
 	</div>
 		
 	<div id="projects">
-		<div id="projectsText" class="text info">
-			<h2>Projects</h2>
-			<br><hr style="width:25%">
-			<h3 onclick="openInNewTab('https://play.google.com/store/apps/details?id=com.charizard832.game')"
-				style="cursor:pointer;text-decoration: underline;">Peh</h3><br>
-
-			<img style="vertical-align:middle;"src="assets/images/peh.png">
-			<div style="display:inline-block; text-align:left; vertical-align:middle;">
-			&#8226; A simple mobile arcade-style game with original art and music<br>
-			&#8226; Developed using Java with the <a href="https://libgdx.badlogicgames.com/" target="_blank">LibGDX</a> framework<br>
-			&#8226; <a href="https://www.getpaint.net/" target="_blank">Paint.net</a> and <a href="https://musescore.org/en" target="_blank">MuseScore</a> were used for the art and music
+		<div id="projectsBubble">
+			<div id="projectsText" class="text">
+				<h2>Projects</h2>
+				<br><hr style="width:25%">
+				<h3 onclick="openInNewTab('https://play.google.com/store/apps/details?id=com.charizard832.game')"
+					style="cursor:pointer;text-decoration: underline;">Peh</h3><br>
+	
+				<img style="vertical-align:middle; width:15%; height:15%;"src="assets/images/peh.png">
+				<div style="display:inline-block; text-align:left; vertical-align:middle;">
+				&#8226; A simple mobile arcade-style game with original art and music<br>
+				&#8226; Developed using Java with the <a href="https://libgdx.badlogicgames.com/" target="_blank">LibGDX</a> framework<br>
+				&#8226; <a href="https://www.getpaint.net/" target="_blank">Paint.net</a> and <a href="https://musescore.org/en" target="_blank">MuseScore</a> were used for the art and music
+				</div>
 			</div>
 		</div>
 	</div>
